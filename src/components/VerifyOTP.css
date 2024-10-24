@@ -1,0 +1,74 @@
+.verify-otp section {
+    background-color: #34d399; /* Emerald background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.verify-otp .w-80 {
+    width: 320px; /* Fixed width for consistency */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between elements */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Inner spacing */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: white; /* Background for form container */
+    margin-left: calc(50% - 160px);
+}
+
+.verify-otp h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px; /* Slightly smaller for better hierarchy */
+    margin-bottom: 24px; /* Spacing below title */
+}
+
+.verify-otp label {
+    font-weight: bold;
+    font-size: 20px; /* Consistent font size for labels */
+    color: white;
+    text-align: center; /* Centered text for a clean look */
+}
+
+.verify-otp .bg-white {
+    background-color: white; /* White background for icons */
+    color: #34d399; /* Emerald text color for contrast */
+    width: fit-content;
+    margin: 0 auto; /* Center alignment */
+    padding: 16px; /* Inner padding */
+    border-radius: 50%; /* Circular shape */
+}
+
+.verify-otp .opt-container {
+    margin: 16px 0; /* Spacing around OTP input */
+}
+
+.verify-otp button {
+    background-color: #059669; /* Darker emerald for button */
+    width: 100%; /* Full width button */
+    display: flex;
+    gap: 8px; /* Space between spinner and text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center text */
+    padding: 10px; /* Inner spacing */
+    color: white; /* White text for contrast */
+    border-radius: 4px; /* Rounded button edges */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.verify-otp button:hover {
+    background-color: #047857; /* Darker shade on hover */
+}
+
+.verify-otp .animate-spin {
+    animation: spin 1s linear infinite; /* Spinning animation for loading state */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

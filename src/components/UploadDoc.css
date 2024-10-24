@@ -1,0 +1,119 @@
+/* UploadDoc.css */
+
+body {
+    height: 100% !important;
+}
+
+.upload-doc h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upload-doc input[type="file"] {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 30%;
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.upload-doc button {
+    display: flex;
+    background-color: hsl(240, 55%, 53%); /* Green */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 60%;
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.upload-doc button:disabled {
+    background-color: #ccc; /* Grey */
+    cursor: not-allowed;
+}
+
+.upload-doc button:hover:not(:disabled) {
+    background-color: #41db49; /* Darker green */
+}
+
+progress {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+progress {
+    width: 30%;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.preview {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.preview img {
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-doc p {
+    color: #555;
+    width: 25%;
+}
+
+button#upload-more {
+    margin-top: 20px;
+    background-color: #007BFF; /* Blue */
+}
+
+button#upload-more:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .upload-doc input[type="file"],
+    .upload-doc button {
+        width: 80%; /* Full width on smaller screens */
+    }
+
+    .upload-doc progress {
+        width: 80%; /* Full width for progress bars */
+    }
+}
+
+@media (max-width: 480px) {
+    .upload-doc h2 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+
+    .upload-doc progress {
+        height: 15px; /* Reduce progress bar height */
+    }
+
+    .upload-doc button {
+        padding: 10px; /* Adjust padding for smaller buttons */
+    }
+}
+.upload-doc h2,
+.upload-doc input,
+.upload-doc button{
+    width: 100%;
+}
+.upload-doc progress{
+    width: calc(100% );
+}
+.upload-doc {
+    width: 300px;
+    margin-left: calc(50% - 150px);
+}

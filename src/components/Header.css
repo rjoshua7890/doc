@@ -1,0 +1,58 @@
+.header{
+    height: 40vw;
+    margin: 3px auto;
+    background: url('../assets/h1.png');
+    background-size: contain;
+    position: relative;
+    border-radius: 50px;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+}
+
+.header-contents h1{
+    font-weight: 5;
+    color: white;
+    font-size: 4vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents p{
+    color: white;
+    font-size: 2vw;
+    
+}
+
+.header-contents button{
+    border: 1px solid #5bed5b;
+    color: #5bed5b;
+    font-weight: 50;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    animation: infinite;
+}
+@media (max-width:1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px){
+    .header-contents{
+        max-width: 65%
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

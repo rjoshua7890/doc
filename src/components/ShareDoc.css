@@ -1,0 +1,94 @@
+.share-doc-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.share-doc-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.share-doc-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share-doc-inputs input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.share-doc-inputs input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.share-doc-button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.share-doc-button:hover {
+    background-color: #0056b3;
+}
+
+.share-doc-manage-button {
+    background-color: #28a745;
+}
+
+.share-doc-manage-button:hover {
+    background-color: #218838;
+}
+.share-doc-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.share-doc-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.share-doc-container ul {
+    list-style-type: none; /* Removes default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.share-doc-container ul li {
+    padding: 8px 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.share-doc-container ul li:hover {
+    background-color: #e9ecef;
+}
